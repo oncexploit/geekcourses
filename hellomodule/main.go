@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/valyala/fasthttp"
 	"go.uber.org/zap"
+	"hellomodule/pkg1path"
 )
 
 var logger *zap.Logger
@@ -16,5 +17,7 @@ func fastHTTPHandler(ctx *fasthttp.RequestCtx) {
 }
 
 func main() {
+	a := "i am localmodule"
+	pkg1name.Sayhi(a)
 	fasthttp.ListenAndServe(":8081", fastHTTPHandler)
 }
