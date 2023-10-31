@@ -9,6 +9,9 @@ import (
 func main() {
 	//int,int8,int32,int64 (uint)
 	//uintptr  大到可存储任意指针
+	overchar()
+}
+func overchar() {
 	presentvar()
 	showfloat()
 	pkg.Toseeistobelieve()
@@ -20,6 +23,7 @@ func main() {
 	pkg.Comparestring()
 	pkg.ConvertString()
 }
+
 func presentvar() {
 	var a int8 = 59
 	fmt.Printf("%b\n", a) //输出二进制：111011
